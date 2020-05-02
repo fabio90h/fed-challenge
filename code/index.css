@@ -2,14 +2,15 @@
             Global
 *******************************/
 
-html, body {
-  font-family: "Lato", Arial, sans-serif;
-  margin: 0px;
-  padding: 0px;
+html,
+body {
+	font-family: "Lato", Arial, sans-serif;
+	margin: 0px;
+	padding: 0px;
 }
 body {
-  min-height: 100%;
-  height: auto;
+	min-height: 100%;
+	height: auto;
 }
 
 h1,
@@ -17,32 +18,108 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Merriweather", Times New Roman, serif;
+	font-family: "Merriweather", Times New Roman, serif;
 }
-
 
 .button {
-
+	border-radius: 8px;
+	color: white;
+	padding: 13px 20px;
+	background: linear-gradient(180deg, rgba(124, 182, 144, 1) 32%, rgba(99, 161, 124, 1) 67%);
 }
-
-
 
 /*******************************
               Page
 *******************************/
 
 .hero {
-
+	background-color: #d9eeef;
+	height: 380px;
 }
-
+.container .content {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: row;
+}
+.content .info {
+	margin-right: 40px;
+	width: 40%;
+	font-family: "Merriweather";
+}
+.content .img {
+	position: relative;
+	width: 50%;
+}
+.img img {
+	width: 90%;
+	position: absolute;
+	right: 10%;
+	top: -30%;
+}
+/*******************************
+         Page
+*******************************/
 .page {
-
+	margin-top: 100px;
 }
+.body {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.card {
+	width: 333px;
+	box-shadow: 0px 5px 17px -4px rgba(0, 0, 0, 0.78);
+	border-radius: 5px;
+	margin-bottom: 50px;
+}
+.card-image {
+	display: flex;
+	border-radius: 5px 5px 0 0;
+	justify-content: center;
+	padding: 50px 0;
+	background: rgb(74, 75, 76);
+	/* background: linear-gradient(180deg, rgba(74,75,76,1) 32%, rgba(44,45,47,1) 67%); */
+}
+.card-info {
+	padding: 20px;
+}
+
+.card-image img {
+}
+
+/*******************************
+         Bottom CTA
+*******************************/
+
+.bottom-info {
+	display: flex;
+	flex-direction: row;
+}
+
+/*******************************
+         Footer
+*******************************/
 
 .footer {
-
+	height: 50px;
+	display: flex;
+	background-color: black;
 }
-
+.footer .container {
+	padding-top: 10px;
+	display: flex;
+	flex-direction: row;
+}
+.footer .container img {
+	height: 50%;
+}
+.footer-text {
+	margin-left: 8px;
+	font-size: 0.7em;
+	color: silver;
+}
 
 /*******************************
          Responsive
@@ -50,14 +127,10 @@ h5 {
 
 /* Small Monitor */
 @media only screen and (min-width: 1025px) and (max-width: 1199px) {
-
-
 }
-
 
 /* Tablet */
 @media screen and (max-width: 1024px) {
-
 }
 
 /* Mobile */
